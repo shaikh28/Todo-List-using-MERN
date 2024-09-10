@@ -33,7 +33,7 @@ app.put("/todos/:id/complete", async (req, res) => {
 });
 
 app.delete("/todos/:id", async (req, res) => {
-  //   await Todo.findByIdAndDelete(req.params.id);
+    await Todo.findByIdAndDelete(req.params.id);
   res.json({ message: "Todo deleted successfully" });
 });
 
